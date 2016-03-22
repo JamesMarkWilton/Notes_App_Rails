@@ -1,0 +1,14 @@
+<table class="notes_table">
+  <tr class="table_headlines">
+    <td><h2>Description</h2></td>
+    <td><h2>Example</h2></td>
+  </tr>
+  <% @notes.each do |note| %>
+  <tr class="table_elements">
+    <td><%= note["description"] %></td>
+    <td><%= note["example"] %></td>
+  </tr>
+  <% end %>
+</table>
+<br>
+<a href= "/" method="get">Search Again</a>

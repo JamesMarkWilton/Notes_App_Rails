@@ -13,3 +13,43 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  background-image: url("http://cdn.shopify.com/s/files/1/0023/2122/products/ROLLBAHN.NOTEBOOK.YELLOW.ALT3_1024x1024.jpg?v=1453503270");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-size: 25px;
+  font: Comic;
+  text-stroke: 3px red;
+  text-align: center;
+}
+
+.button {
+  color: white;
+  background: #0000CC;
+  border-color: white;
+}
+
+a {
+  color: #0022DD;
+}
+
+a:hover {
+  color: white;
+}
+
+.notes_table {
+  width: 97%;
+}
+
+.notes_table tr:nth-child(even) {
+  color: #006699;
+}
+
+.notes_table tr:nth-child(odd) {
+  color: #CC0000;
+}
+
+.table_headlines {
+  color: black;
+}
