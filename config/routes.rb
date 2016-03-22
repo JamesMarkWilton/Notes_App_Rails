@@ -6,8 +6,9 @@ Rails.application.routes.draw do
   root 'notes#search'
 
   # Example of regular route:
-  get '/search' => 'search#returned_notes'
-  get '/new'    => 'new#get_notes'
+  get  '/search' => 'search#returned_notes'
+  post '/new'    => 'new#submit'
+  get  '/new'    => 'new#get_notes'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

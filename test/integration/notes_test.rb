@@ -5,14 +5,15 @@ class NotesTest < ActionDispatch::IntegrationTest
     page.visit '/'
     assert_match /Search Notes/, page.body
 
-    page.visit '/search'
+		click_button 'Submit Query'
     assert_match /Description/, page.body
 
     click_link('Search Again')
-    assert_match /Search Notes/, page.body
-
     click_link('Add your notes here!')
     assert_match /Add Your Notes/, page.body
-    click_link('Go back and search them here')
+
+		click_button 'Submit Notes'
+		assert_match /Good Work/, page.body
+    click_link('Now go search them here')
   end
 end

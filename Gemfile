@@ -41,6 +41,7 @@ group :development, :test do
   # call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'capybara'
   gem 'mrspec'
+  gem 'pry'
 end
 
 group :development do
