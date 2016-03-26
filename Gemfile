@@ -35,13 +35,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'pry'
 end
 
-group :development, :test do
+group :test do
   # call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'capybara'
   gem 'mrspec'
-  gem 'pry'
 end
 
 group :development do
