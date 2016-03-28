@@ -3,4 +3,7 @@ class NotesController < ApplicationController
   end
   def new
   end
+  def index
+    @notes = Note.all
+  end
 end

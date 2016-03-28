@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   # Example of regular route:
   get  '/search' => 'search#returned_notes'
+  get  '/index'  => 'notes#index'
   post '/new'    => 'new#submit'
   get  '/new'    => 'new#get_notes'
 
